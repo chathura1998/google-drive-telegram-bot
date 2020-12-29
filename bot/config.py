@@ -6,8 +6,6 @@ class config:
     SUDO_USERS = "1335338194" # Sepearted by space.
     SUPPORT_CHAT_LINK = ""
     DOWNLOAD_DIRECTORY = "./downloads/"
-from tqdm import tqdm, trange
-from time import sleep
 
 
 
