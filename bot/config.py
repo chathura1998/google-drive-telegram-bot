@@ -51,8 +51,7 @@ class Messages:
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
     
     DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n\n**Filename:** ```{}```\n**Size:** ```{}``` {
-    for i in trange(10):
-    sleep(0.4)}"
+
     
     UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
     
