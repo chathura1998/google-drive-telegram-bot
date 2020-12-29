@@ -1,5 +1,4 @@
 import os
-from tqdm import tqdm, trange
 from time import sleep
 from pyrogram import Client, filters
 from bot.helpers.sql_helper import gDriveDB, idsDB
@@ -9,8 +8,6 @@ from bot.helpers.gdrive_utils import GoogleDrive
 from bot import DOWNLOAD_DIRECTORY, LOGGER
 from bot.config import Messages, BotCommands
 from pyrogram.errors import FloodWait, RPCError
-
-
 
 @Client.on_message(filters.private & filters.incoming & filters.text & (filters.command(BotCommands.Download) | filters.regex('^(ht|f)tp*')) & CustomFilters.auth_users)
 def _download(client, message):
