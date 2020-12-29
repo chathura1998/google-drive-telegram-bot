@@ -17,7 +17,11 @@ class BotCommands:
   Delete = ['delete', 'del']
   EmptyTrash = ['emptyTrash']
   Ytdl = ['ytdl']
+from tqdm import tqdm, trange
+from time import sleep
 
+for i in trange(10):
+    sleep(0.4)
 class Messages:
     START_MSG = "**🔰 Hi {} Welcome to GmasterV9_bot! 🔰.**\n \n I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files.\n You can know more from /help."
 
