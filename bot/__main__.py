@@ -1,11 +1,7 @@
 import os
 import logging
 from pyrogram import Client
-from tqdm import tqdm, trange
-from time import sleep
 
-for i in trange(10):
-    sleep(0.4)
 from bot import (
   APP_ID,
   API_HASH,
