@@ -1,6 +1,11 @@
 import os
 import logging
 from pyrogram import Client
+from tqdm import tqdm, trange
+from time import sleep
+
+for i in trange(10):
+    sleep(0.4)
 from bot import (
   APP_ID,
   API_HASH,
@@ -12,17 +17,10 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
-from tqdm import tqdm, trange
-from time import sleep 
 
-for i in trange(10):
-    sleep(0.4)
-    
-#OR
 
-for i in tqdm(range(5)):
-    sleep(0.4)
     
+
     
 LOGGER = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
