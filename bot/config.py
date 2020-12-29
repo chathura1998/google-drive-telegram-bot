@@ -19,7 +19,7 @@ class BotCommands:
   Ytdl = ['ytdl']
 
 class Messages:
-    START_MSG = "**Hi there {}.**\n__I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files.__\n__You can know more from /help.__"
+    START_MSG = "**🔰 Hi {} Welcome to GmasterV9_bot! 🔰.**\n_\n_ I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files._\n_You can know more from /help.__"
 
     HELP_MSG = [
         ".",
@@ -49,7 +49,7 @@ class Messages:
     
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n\n**Filename:** ```{}```\n**Size:** ```{}```"
     
     UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
     
