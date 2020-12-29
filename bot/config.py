@@ -6,6 +6,9 @@ class config:
     SUDO_USERS = "1335338194" # Sepearted by space.
     SUPPORT_CHAT_LINK = ""
     DOWNLOAD_DIRECTORY = "./downloads/"
+from tqdm import tqdm, trange
+from time import sleep
+
 
 
 class BotCommands:
@@ -17,13 +20,9 @@ class BotCommands:
   Delete = ['delete', 'del']
   EmptyTrash = ['emptyTrash']
   Ytdl = ['ytdl']
-from tqdm import tqdm, trange
-from time import sleep
 
-for i in trange(10):
-    sleep(0.4)
 class Messages:
-    START_MSG = "**🔰 Hi {} Welcome to GmasterV9_bot! 🔰.**\n \n I'm Google Drive Uploader Bot.You can use me to upload any file / video to Google Drive from direct link or Telegram Files.\n You can know more from /help."
+    START_MSG = "**🔰 Hi {} Welcome to GmasterV9_bot! 🔰.**\n \n I'm Google Drive Uploader Bot.You can use me to upload any file video to Google Drive from direct link or Telegram Files.\n You can know more from /help."
 
     HELP_MSG = [
         ".",
@@ -53,13 +52,15 @@ class Messages:
     
     NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n\n**Filename:** ```{}```\n**Size:** ```{}``` {
+    for i in trange(10):
+    sleep(0.4)}"
     
     UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
     
     DOWNLOAD_ERROR = "❗**Downloader Failed**\n{}\n__Link - {}__"
     
-    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```"
+    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```" 
     
     ALREADY_AUTH = "🔒 **Already authorized your Google Drive Account.**\n__Use /revoke to revoke the current account.__\n__Send me a direct link or File to Upload on Google Drive__"
     
